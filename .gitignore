@@ -1,0 +1,29 @@
+# Исключаем зависимости
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Файлы окружения (если есть)
+.env
+.env.local
+.env.development
+.env.production
+
+# Директории сборки
+dist/
+.next/
+out/
+.vite/
+
+# Кэш и логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode/
+.idea/
+.DS_Store
+
+# Vercel
+.vercel/
