@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Центровка всего приложения */
+body {
+  @apply flex justify-center items-center min-h-screen bg-gray-100;
+}
+
+/* Основной контейнер */
+.container {
+  @apply bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl;
+}
+
+/* Поля ввода */
+.textfield {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200;
+}
+
+/* Базовая кнопка */
+.btn {
+  @apply inline-block px-4 py-2 font-medium rounded;
+}
+
+/* Кнопка для добавления (базовая) */
+.btn-basic {
+  @apply bg-blue-500 text-white hover:bg-blue-600 transition-colors;
+}
+
+/* Кнопка удаления */
+.btn-delete {
+  @apply bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition-colors mt-2;
+}
+
+/* Футер формы */
+.form-footer {
+  @apply flex items-center justify-between mt-4;
+}
+
+/* Сообщение валидации */
+.validation {
+  @apply text-red-500 text-sm;
+}
+
+/* Карточка товара */
+.item {
+  @apply bg-white shadow rounded p-4 mb-4 flex flex-col md:flex-row justify-between items-center;
+}
+
+/* Информация о товаре */
+.item-info h2 {
+  @apply text-xl font-bold mb-2;
+}
+
+.item-info p {
+  @apply text-gray-700;
+}
+
+/* Управление количеством товара */
+.item-quantity {
+  @apply flex items-center space-x-2 mt-2 md:mt-0;
+}
+
+.item-less,
+.item-more {
+  @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-1 px-3 rounded;
+}
+
+.item-total {
+  @apply text-lg font-semibold w-8 text-center;
+}
+
+/* Список товаров */
+.shop {
+  @apply list-none p-0;
+}
