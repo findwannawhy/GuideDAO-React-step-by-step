@@ -88,7 +88,7 @@ export default function Shop() {
         onFormSubmit={handleFormSubmit}
       />
       {loader && <p>Добавляем товар...</p>}
-      {items.length === 0 && <p>Добавьте первый товар</p>}
+      {(items.length === 0 && !loader) && <p>Добавьте первый товар</p>}
       <ItemsList items={items} onDeleteClick={handleDeleteClick} />
     </>
   );
