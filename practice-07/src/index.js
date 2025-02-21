@@ -8,8 +8,7 @@ function App() {
   const [shop, setShop] = useState(null);
   const [map, setMap] = useState(null);
 
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoiYm9vYW5kcmV3IiwiYSI6ImNrd3M2ZGF1YzBhcDEyb21obzUwcDlvNXMifQ.q0NAPJB4RMgRRI8Fi9PWZg";
+  mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
   const stores = {
     km20: [37.610641, 55.761994],
